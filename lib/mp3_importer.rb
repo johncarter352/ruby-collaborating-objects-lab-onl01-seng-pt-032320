@@ -6,7 +6,7 @@ class MP3Importer
   end
   
   def files
-    @files = Dir.entries(@path).select {|song| !files.directory?(song) && song.end_with?(".mp3")}
+   @files = Dir.entries(path).grep(/.*\.mp3/)
   end 
   
   def import 
