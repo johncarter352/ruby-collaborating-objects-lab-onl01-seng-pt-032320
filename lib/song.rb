@@ -13,6 +13,7 @@ class Song
   end
   
   def self.all
+    @all 
     save
   end
   
