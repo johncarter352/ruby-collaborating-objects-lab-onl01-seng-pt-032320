@@ -13,8 +13,7 @@ class Song
   end
   
   def self.all
-    @all 
-    save
+    @all
   end
   
   def self.new_by_filename(file_name)
